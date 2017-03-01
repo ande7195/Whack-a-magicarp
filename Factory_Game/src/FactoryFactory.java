@@ -8,20 +8,23 @@
  *
  * @author Anders
  */
-public class FactoryFactory {
+public class FactoryFactory extends InfantryFactory {
 
     public InfantryFactory createInfantryFactory(int race) {
         HumanFactory humanFactory = new HumanFactory();
         OrcFactory orcFactory = new OrcFactory();
-
-        if (race == 1) {
-            return humanFactory;
-        }
-        if (race == 2) {
-            return orcFactory;
-        } else {
+        InfantryFactory factory;
+        switch (race) {
+            case 1:
+            factory = new HumanFactory();
+            break;
+            case 2:
+            factory = new OrcFactory();
+            break;
+            default:
             return null;
         }
+        return factory;
     }
 
 }
