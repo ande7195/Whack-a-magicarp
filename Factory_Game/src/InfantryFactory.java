@@ -8,7 +8,7 @@
  *
  * @author Anders
  */
-public class HumanFactory extends InfantryFactory {
+public abstract class InfantryFactory {
 
     public InfantryUnit createUnit(int techLevel) {
         InfantryUnit charachter;
