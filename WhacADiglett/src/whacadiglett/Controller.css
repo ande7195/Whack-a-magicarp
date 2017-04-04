@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-03-2017, 10:14:32
+    Author     : Anders
+*/
+.root{-fx-background-image: url("background.jpg");
+    -fx-background-size: cover;
+}
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9{-fx-background-image: url("Magikarp.png"); 
+-fx-background-size: cover;
+-fx-background-color: null;
+}
